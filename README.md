@@ -36,3 +36,9 @@ With all the necessary optimizations in place (simple data types, composable nod
 
 I’m still curios though as to what the path forward is for fixing the serialization/deserialization performance issues. Can/will these be fixed by a more efficient rmw implementation?  ....... (https://discourse.ros.org/t/ros2-speed/20162/28)  
 
+==================  
+
+Potential Problem:  
+-   Network throughput not enough:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cyclone-dds-tuning
+-   Serialization slow by default in ROS2 problem:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cross-vendor-tuning  
+
