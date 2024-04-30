@@ -83,4 +83,9 @@ https://docs.openvins.com/dev-ros1-to-ros2.html
 [Optional] Good to have for realtime operation, in the future:  
 Implementing a custom memory allocator  
 why? Suppose you want to write real-time safe code, and you’ve heard about the many dangers of calling “new” during the real-time critical section, because the default heap allocator on most platforms is nondeterministic....  
-https://docs.ros.org/en/humble/Tutorials/Advanced/Allocator-Template-Tutorial.html
+https://docs.ros.org/en/humble/Tutorials/Advanced/Allocator-Template-Tutorial.html  
+
+========================  
+
+ROS2 design philosophy?  
+http://design.ros2.org/  
