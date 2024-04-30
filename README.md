@@ -40,5 +40,5 @@ I’m still curios though as to what the path forward is for fixing the serializ
 
 Potential Problem:  
 -   Network throughput not enough:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cyclone-dds-tuning
--   Serialization slow by default in ROS2 problem:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cross-vendor-tuning  
+-   Serialization slow by default in ROS2 problem:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cross-vendor-tuning (under Issue: Sending custom messages with large variable-sized arrays of non-primitive types causes high serialization/deserialization overhead a.....)  
 
