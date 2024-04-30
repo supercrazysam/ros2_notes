@@ -85,6 +85,10 @@ Implementing a custom memory allocator
 why? Suppose you want to write real-time safe code, and you’ve heard about the many dangers of calling “new” during the real-time critical section, because the default heap allocator on most platforms is nondeterministic....  
 https://docs.ros.org/en/humble/Tutorials/Advanced/Allocator-Template-Tutorial.html  
 
+=======================  
+Important info for intraprocess comm (ROS2)  
+https://docs.ros.org/en/humble/Tutorials/Demos/Intra-Process-Communication.html  
+
 ========================  
 
 ROS2 design philosophy?  
