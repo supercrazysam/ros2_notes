@@ -51,4 +51,9 @@ Comment about non-primative datatype serialization speed:
   It's also not specific to custom messages, it's true of any message with any non-primitive type over any DDS.  
   .  
   There is something seriously, seriously wrong with either the implementation or the design of the serialization for it to perform as badly as it does.  
-  https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1162596314
+  https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1162596314  
+
+===================  
+
+Since ros2 by default use fastdds,  here are the things to note when using fastdds,  for optimization:  
+https://docs.ros.org/en/humble/Tutorials/Advanced/FastDDS-Configuration.html  
