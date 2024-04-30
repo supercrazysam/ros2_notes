@@ -63,3 +63,9 @@ Environmental variable setup:
 export ROS_DOMAIN_ID=0         #all ros2 nodes use 0 by default,   this exist so that there can be separate clusters of nodes, sharing the same network interface, while not interacting with stuff from other cluster.  
 export ROS_LOCALHOST_ONLY=1    #limits everything within localhost  
 https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html  
+
+======================  
+ROS1 bag to ROS2 bag  :
+https://discourse.ros.org/t/ros1-bag-file-to-ros2-bag-file-converter/19995/3  
+or  
+https://docs.openvins.com/dev-ros1-to-ros2.html  
