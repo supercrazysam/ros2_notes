@@ -15,7 +15,7 @@ sudo sysctl -w net.core.rmem_max=67108864 net.core.rmem_default=67108864
 sudo sysctl -w net.core.wmem_max=67108864 net.core.wmem_default=67108864  
 
 https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1550349624  
-.  
+
 ===================  
 I don’t have an easy fix, and I fully believe I understand why things are the way they are in ROS 2  
 and I also understand that making high-performance networking applications is still complex and needs lots of moving parts to do just the right things in the right way,  
