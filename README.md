@@ -57,3 +57,9 @@ Comment about non-primative datatype serialization speed:
 
 Since ros2 by default use fastdds,  here are the things to note when using fastdds,  for optimization:  
 https://docs.ros.org/en/humble/Tutorials/Advanced/FastDDS-Configuration.html  
+
+====================  
+Environmental variable setup:  
+export ROS_DOMAIN_ID=0         #all ros2 nodes use 0 by default,   this exist so that there can be separate clusters of nodes, sharing the same network interface, while not interacting with stuff from other cluster.  
+export ROS_LOCALHOST_ONLY=1    #limits everything within localhost  
+https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html  
