@@ -65,6 +65,10 @@ export ROS_LOCALHOST_ONLY=1    #limits everything within localhost
 https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html  
 
 ======================  
+ROS2 QoS settings:  
+https://docs.ros.org/en/humble/Concepts/Intermediate/About-Quality-of-Service-Settings.html
+
+======================  
 ROS1 bag to ROS2 bag  :
 https://discourse.ros.org/t/ros1-bag-file-to-ros2-bag-file-converter/19995/3  
 or  
