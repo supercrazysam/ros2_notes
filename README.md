@@ -24,4 +24,15 @@ but seeing what @codebot had to do to get to the performance of @Bernd_Pfrommer�
 https://discourse.ros.org/t/ros2-speed/20162/19    (involve setting rmem wmem  and not using certain types,  use some other type instead)  
 https://discourse.ros.org/t/ros2-speed/20162/21  
 
+===================  
+
+Some closing remarks on the ROS2 performance issues I encountered when writing a ROS2 driver for the event based Prophesee cameras 38.  
+
+The serialization/deserialization of structures in ROS2 is currently much slower than in ROS1 in particular if such structures contain other non-primitive data types like e.g. Time. To get high performance in ROS2 currently requires avoiding such situations. I ended up squeezing all event data into a uint64 field and then essentially packing/unpacking manually into that 64bit space. As a fringe benefit, the compressed data format also cut the storage and bandwidth requirements by almost a factor of two.  
+
+AFAIK Galactic currently does not support running rosbag record as a composable node. However with a small temporary tweak to the Recorder code 11 I was able to write my own composable node that can store without inter-process communication.  
+
+With all the necessary optimizations in place (simple data types, composable nodes) ROS2 (cyclonedds) actually runs with slightly less CPU consumption than ROS1 as shown in this table (scroll all the way down) 38. So it’s not like ROS2 can’t perform, it’s just that one has to work harder to get there.  
+
+I’m still curios though as to what the path forward is for fixing the serialization/deserialization performance issues. Can/will these be fixed by a more efficient rmw implementation?  ....... (https://discourse.ros.org/t/ros2-speed/20162/28)  
 
