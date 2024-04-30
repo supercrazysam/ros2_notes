@@ -73,4 +73,11 @@ ROS1 bag to ROS2 bag  :
 https://discourse.ros.org/t/ros1-bag-file-to-ros2-bag-file-converter/19995/3  
 or  
 https://docs.openvins.com/dev-ros1-to-ros2.html  
-*seems like both method are the same, both pointing to the use of "rosbags" python library that supports ROS1 <=> ROS2 bags mainpulation. There are options to exclude, include topics as well.
+*seems like both method are the same, both pointing to the use of "rosbags" python library that supports ROS1 <=> ROS2 bags mainpulation. There are options to exclude, include topics as well.  
+
+======================  
+
+[Optional] Good to have for realtime operation, in the future:  
+Implementing a custom memory allocator  
+why? Suppose you want to write real-time safe code, and you’ve heard about the many dangers of calling “new” during the real-time critical section, because the default heap allocator on most platforms is nondeterministic....  
+https://docs.ros.org/en/humble/Tutorials/Advanced/Allocator-Template-Tutorial.html
