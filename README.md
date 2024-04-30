@@ -42,4 +42,9 @@ Potential Problem:
 -   Network throughput not enough:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cyclone-dds-tuning
 -   Serialization slow by default in ROS2 problem:  https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html#cross-vendor-tuning (under Issue: Sending custom messages with large variable-sized arrays of non-primitive types causes high serialization/deserialization overhead a.....)
 
-  " high (de)serialization cost of custom messages with large variable-sized arrays of non-primitive types"  It's also not specific to custom messages, it's true of any message with any non-primitive type over any DDS.
+Comment about non-primative datatype serialization speed: 
+  " high (de)serialization cost of custom messages with large variable-sized arrays of non-primitive types"  
+  It's also not specific to custom messages, it's true of any message with any non-primitive type over any DDS.  
+  .  
+  There is something seriously, seriously wrong with either the implementation or the design of the serialization for it to perform as badly as it does.  
+  https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1162596314
