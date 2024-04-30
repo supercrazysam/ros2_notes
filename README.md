@@ -69,3 +69,4 @@ ROS1 bag to ROS2 bag  :
 https://discourse.ros.org/t/ros1-bag-file-to-ros2-bag-file-converter/19995/3  
 or  
 https://docs.openvins.com/dev-ros1-to-ros2.html  
+*seems like both method are the same, both pointing to the use of "rosbags" python library that supports ROS1 <=> ROS2 bags mainpulation. There are options to exclude, include topics as well.
