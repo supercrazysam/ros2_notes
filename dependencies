@@ -1,1 +1,3 @@
-sudo apt install ros-humble-velodyne
+sudo apt install ros-humble-velodyne  
+git clone https://github.com/ros-drivers/velodyne.git -b humble-devel  
+ 
