@@ -56,6 +56,9 @@ Comment about non-primative datatype serialization speed:
   There is something seriously, seriously wrong with either the implementation or the design of the serialization for it to perform as badly as it does.  
   https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1162596314  
 
+More hints on DDS tuning (looks good info):  
+http://59.110.158.57/35448  
+
 ===================  
 
 Since ros2 by default use fastdds,  here are the things to note when using fastdds,  for optimization:  
