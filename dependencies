@@ -15,5 +15,9 @@ ros2 launch velodyne_pointcloud velodyne_transform_node-VLP16-launch.py
 # bag2 replay     (rosbag now becomes a folder with metadata and sqlite3 db)  
 ros2 bag play sensor_2_shenot
 
-
+# rviz
 ros2 run rviz2 rviz2
+
+
+#rqt_bag (rqt_bag same command still works)  
+rqt_bag <folder_name>  
