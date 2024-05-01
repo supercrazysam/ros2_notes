@@ -71,9 +71,9 @@ export ROS_LOCALHOST_ONLY=1    #limits everything within localhost
 https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html  
 
 
-export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-export RMW_FASTRTPS_USE_QOS_FROM_XML=1
-export FASTRTPS_DEFAULT_PROFILES_FILE=/home/shum/SyncAsync.xml
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp  
+export RMW_FASTRTPS_USE_QOS_FROM_XML=1  
+export FASTRTPS_DEFAULT_PROFILES_FILE=/home/shum/SyncAsync.xml  
 
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
