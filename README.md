@@ -70,6 +70,49 @@ export ROS_DOMAIN_ID=0         #all ros2 nodes use 0 by default,   this exist so
 export ROS_LOCALHOST_ONLY=1    #limits everything within localhost  
 https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html  
 
+
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export RMW_FASTRTPS_USE_QOS_FROM_XML=1
+export FASTRTPS_DEFAULT_PROFILES_FILE=/home/shum/SyncAsync.xml
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+
+    <!-- default publisher profile -->
+    <publisher profile_name="default_publisher" is_default_profile="true">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+    </publisher>
+
+    <!-- default subscriber profile -->
+    <subscriber profile_name="default_subscriber" is_default_profile="true">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+    </subscriber>
+
+    <!-- publisher profile for topic sync_topic -->
+    <publisher profile_name="/sync_topic">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+        <qos>
+            <publishMode>
+                <kind>SYNCHRONOUS</kind>
+            </publishMode>
+        </qos>
+    </publisher>
+
+    <!-- publisher profile for topic async_topic -->
+    <publisher profile_name="/async_topic">
+        <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
+        <qos>
+            <publishMode>
+                <kind>ASYNCHRONOUS</kind>
+            </publishMode>
+        </qos>
+    </publisher>
+
+ </profiles>
+
+```
+
 ======================  
 ROS2 QoS settings:  
 https://docs.ros.org/en/humble/Concepts/Intermediate/About-Quality-of-Service-Settings.html
