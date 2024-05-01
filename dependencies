@@ -1,3 +1,4 @@
 sudo apt install ros-humble-velodyne  
 git clone https://github.com/ros-drivers/velodyne.git -b humble-devel  
  
+https://github.com/ros-drivers/velodyne/issues/480#issuecomment-1306803238
