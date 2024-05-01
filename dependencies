@@ -7,3 +7,5 @@ https://github.com/ros-drivers/velodyne/issues/480#issuecomment-1306803238
 
 velodyne_convert_node  does not fucking exist anymore.... according to this piece of shit PR (https://github.com/ros-drivers/velodyne/commit/76cec0a6dc901416c5d4f8f8916f371e3150f74e)   
 velodyne_convert_node get merged with velodyne_transform_node  
+
+ros2 run rviz2 rviz2
