@@ -16,6 +16,9 @@ sudo sysctl -w net.core.wmem_max=67108864 net.core.wmem_default=67108864
 
 https://github.com/ros2/rmw_cyclonedds/issues/346#issuecomment-1550349624  
 
+TUNING!!! (template values for different network speed ):  
+https://www.savapage.org/docs/manual/ch-tuning.html
+
 ===
 
 ![alt text](https://github.com/supercrazysam/ros2_notes/blob/main/Screenshot%20from%202024-04-30%2013-14-28.png)
