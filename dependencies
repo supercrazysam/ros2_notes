@@ -27,3 +27,8 @@ creating new package, custom stuff:
 
 cd to catkin2_ws/src:  
 ros2 pkg create --build-type ament_cmake pc_freq_checker
+
+
+rosdep install -i --from-path src --rosdistro humble -y
+
+colcon build
