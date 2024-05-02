@@ -21,3 +21,9 @@ ros2 run rviz2 rviz2
 
 #rqt_bag (rqt_bag same command still works)  
 rqt_bag <folder_name>  
+
+=============================  
+creating new package, custom stuff:  
+
+cd to catkin2_ws/src:  
+ros2 pkg create --build-type ament_cmake pc_freq_checker
