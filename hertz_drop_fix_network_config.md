@@ -11,3 +11,7 @@ https://iroboteducation.github.io/create3_docs/setup/xml-config/
 
 I applied this solution (https://robotics.stackexchange.com/questions/98466/how-to-specify-the-network-interface-ros2-uses-for-communication) for selecting specific networks interfaces for ros2 to use, but when specified, it still seems to end up using other interfaces.  
 https://robotics.stackexchange.com/questions/107919/how-to-get-select-ros2-network-interface-with-xml-working  
+
+==============================  
+the qos_v2.xml that worked????  need to study why this worked.   launch rviz have not impact on pointcloud rate,  even messing around with the setting looks good.  
+https://github.com/ros2/rmw_fastrtps/issues/460#issuecomment-716390249  
